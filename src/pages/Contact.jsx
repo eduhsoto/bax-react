@@ -1,4 +1,4 @@
-import SendMail from "../components/Contact/SendMail";
+import SendMail from "../components/contact/SendMail";
 
 const Contact = () => {
   return (
