@@ -1,4 +1,4 @@
-export const CardT = ({img, paragraph, name, lineSide}) => {
+const CardT = ({img, paragraph, name, lineSide}) => {
   const line = "relative before:absolute before:w-[2px] before:h-[60%] before:-left-[9%] before:top-0 before:bottom-0 before:bg-color_secondary_2";
   return (
     <div className={`flex items-center flex-col ${lineSide ? line : ''}`}>
@@ -10,3 +10,5 @@ export const CardT = ({img, paragraph, name, lineSide}) => {
     </div>
   );
 };
+
+export default CardT;

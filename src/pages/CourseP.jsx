@@ -1,9 +1,10 @@
-import { Course } from "../components/course/Course";
+import Course from "../components/course/Course";
+import Qa from "../components/Qa";
 
 const CourseP = () => {
   return (
     <>
-      <section>
+      <section className="mt-28 mb-52">
         <Course
           img="./src/assets/img/management-course-2.png"
           alt="management course image"
@@ -14,8 +15,8 @@ const CourseP = () => {
           subjects="Cantidad de materias: 16"
         />
       </section>
-      <section>
-        <div className="container object__animate card__animate show">
+      <section className="mt-28 mb-52">
+        <div className="mx-16 tablet:mx-8 phone:mx-4 flex justify-center items-center flex-wrap gap-16">
           <div className="left__course flex__column form__contact">
             <h3 className="title__course margin__bottom-none">Contabilidad</h3>
             <p className="p__color p__roboto">
@@ -37,7 +38,7 @@ const CourseP = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="mt-28 mb-52">
         <Course
           img="./src/assets/img/marketing-course-2.png"
           alt="marketing course image"
@@ -48,6 +49,20 @@ const CourseP = () => {
           subjects="Cantidad de materias: 16"
         />
       </section>
+      <section className="mt-28 mb-52">
+        <div className="mx-16 flex justify-center tablet:mx-8 phone:mr-8">
+          <Qa
+            q1="¿Cómo puedo inscribirme a un curso?"
+            q2="¿Existen promociones para cursar los tres cursos disponibles?"
+            q3="¿Tienen otro canal de contacto ademas de éste?"
+          />
+        </div>
+      </section>
+      <div className="mx-16 tablet:mx-8 phone:mx-4 flex justify-center">
+        <a href="/contact" className="button-cta">
+          Contactar
+        </a>
+      </div>
     </>
   );
 };

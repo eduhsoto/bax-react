@@ -1,6 +1,6 @@
-export const Course = ({img, alt, title, p1, p2, time, subjects}) => {
+const Course = ({img, alt, title, p1, p2, time, subjects}) => {
   return (
-    <div className="container object__animate left__animate show">
+    <div className="mx-16 tablet:mx-8 phone:mx-4 flex justify-center items-center flex-wrap gap-16">
       <div className="right">
         <img
           src={img}
@@ -23,3 +23,5 @@ export const Course = ({img, alt, title, p1, p2, time, subjects}) => {
     </div>
   );
 };
+
+export default Course;

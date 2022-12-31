@@ -15,6 +15,7 @@ module.exports = {
         error_input: "#910000",
         correct_input: "#007400",
         menu_item_default: "#8A8A9E",
+        error_sent_form: "#F9A9C6",
       },
       screens: {
         tablet: { max: "820px" },

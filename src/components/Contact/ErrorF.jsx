@@ -1,14 +1,13 @@
+import MsgForm from "./msgForm";
+
 const ErrorF = () => {
   return (
-    <div className="error__net">
-      <p className="p__error p__roboto">
-        Fallo al enviar tus datos, revisa tu conexión a internet y/o vuelve a
-        intentar.
-      </p>
-      <p className="p__error p__roboto">
-        Recarge esta pagina una vez conectado a la red.
-      </p>
-    </div>
+    <MsgForm
+      title="¡Tu mensaje no pudo enviarse, intentelo más tarde!"
+      result="Revise su conexión a internet y recarge esta página una vez verificado su conexión, si el error persiste contáctenos"
+      paragraph="Puedes hacerlo por aquí, visita nuestras redes sociales."
+      error={true}
+    />
   );
 };
 

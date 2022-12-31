@@ -22,7 +22,7 @@ const SendMail = () => {
       );
       setFormState({ ...formState, sent: true, visible: false });
     } catch (error) {
-      setFormState({ sent: false, visible: true, error: true });
+      setFormState({ sent: false, visible: false, error: true });
       console.log(error);
     }
   };

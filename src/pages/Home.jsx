@@ -1,6 +1,7 @@
 import CardF from "../components/Home/CardF";
-import { CardT } from "../components/Home/CardT";
+import CardT from "../components/Home/CardT";
 import Course from "../components/Home/Course";
+import Qa from "../components/Qa";
 
 const Home = () => {
   return (
@@ -15,10 +16,7 @@ const Home = () => {
               Te acompañamos en tu camino con profesionales experimentados y las
               mejores herramientas.
             </p>
-            <a
-              href="/courses"
-              className="button-cta tablet:hidden"
-            >
+            <a href="/courses" className="button-cta tablet:hidden">
               Conoce nuestros cursos
             </a>
           </div>
@@ -202,8 +200,13 @@ const Home = () => {
         />
       </section>
       <section className="mt-28 mb-52">
-        <div className="mx-16 flex flex-wrap items-center gap-16 tablet:mx-8 phone:mx-4" id="about">
-          <h2 className="text-color_primary_2 after:bg-color_secondary_2 mb-14">Nosotros</h2>
+        <div
+          className="mx-16 flex flex-wrap items-center gap-16 tablet:mx-8 phone:mx-4"
+          id="about"
+        >
+          <h2 className="text-color_primary_2 after:bg-color_secondary_2 mb-14">
+            Nosotros
+          </h2>
 
           <div className="grid gap-16 grid-cols-3-auto justify-items-center items-stretch">
             <div className="card__item object__animate right__animate show">
@@ -262,8 +265,12 @@ const Home = () => {
 
           <div className="flex items-center flex-col">
             <img src="./src/assets/img/ceo-director.png" alt="ceo director" />
-            <p className="text-color_primary_2 text-[1.375rem] font-semibold leading-[45px]">Carlos Carrera</p>
-            <p className="text-color_primary_2 text-lg font-normal leading-[34px] tablet:text-center">CEO/Director BAX Soluciones</p>
+            <p className="text-color_primary_2 text-[1.375rem] font-semibold leading-[45px]">
+              Carlos Carrera
+            </p>
+            <p className="text-color_primary_2 text-lg font-normal leading-[34px] tablet:text-center">
+              CEO/Director BAX Soluciones
+            </p>
           </div>
         </div>
         <img
@@ -286,42 +293,11 @@ const Home = () => {
       </section>
       <section className="mt-28 mb-52 relative">
         <div className="mx-16 flex justify-center tablet:mx-8 phone:mr-8">
-          <div className="qa__content">
-            <p className="text-[22px] text-color_primary_2 mb-14 leading-[60px] font-extrabold">Preguntas frecuentes</p>
-
-            <ol className="list-decimal">
-              <div className="flex justify-between items-center mt-10 gap-32">
-                <li className="font-roboto text-lg leading-[34px] font-semibold text-color_primary_2">
-                  ¿Entregan certificaciones?
-                </li>
-                <img
-                  src="./src/assets/img/keyboard_arrow_down.svg"
-                  alt="arrow down"
-                  className="arrow__down"
-                />
-              </div>
-              <div className="flex justify-between items-center mt-10 gap-32">
-                <li className="font-roboto text-lg leading-[34px] font-semibold text-color_primary_2">
-                  ¿Como puedo inscribirme?
-                </li>
-                <img
-                  src="./src/assets/img/keyboard_arrow_down.svg"
-                  alt="arrow down"
-                  className="arrow__down"
-                />
-              </div>
-              <div className="flex justify-between items-center mt-10 gap-32">
-                <li className="font-roboto text-lg leading-[34px] font-semibold text-color_primary_2">
-                  ¿Necesito conocimientos previos para cursar
-                </li>
-                <img
-                  src="./src/assets/img/keyboard_arrow_down.svg"
-                  alt="arrow down"
-                  className="arrow__down"
-                />
-              </div>
-            </ol>
-          </div>
+          <Qa
+            q1="¿Entregan certificaciones?"
+            q2="¿Como puedo inscribirme?"
+            q3="¿Necesito conocimientos previos para cursar"
+          />
         </div>
         <img
           src="./src/assets/img/curveRD.svg"
@@ -330,7 +306,9 @@ const Home = () => {
         />
       </section>
       <div className="mx-16 flex justify-center">
-        <h2 className="text-color_primary_2 tablet:text-center phone:text-[2.5rem]">Tu futuro es hoy</h2>
+        <h2 className="text-color_primary_2 tablet:text-center phone:text-[2.5rem]">
+          Tu futuro es hoy
+        </h2>
       </div>
     </>
   );
