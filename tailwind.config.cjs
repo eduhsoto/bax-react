@@ -27,6 +27,13 @@ module.exports = {
       borderRadius: {
         "bax-radius": "30px 0px 30px 30px",
       },
+      gridTemplateColumns: {
+        "3-auto": "repeat(auto-fit, minmax(200px, 1fr))",
+      },
+      fontFamily: {
+        'gilgory': ['Gilroy'],
+        'roboto' : ['roboto']
+      }
     },
   },
   plugins: [],

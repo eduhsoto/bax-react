@@ -1,36 +1,38 @@
 import CardF from "../components/Home/CardF";
 import { CardT } from "../components/Home/CardT";
 import Course from "../components/Home/Course";
-import TitleH2 from "../components/Home/TitleH2";
 
 const Home = () => {
   return (
     <>
-      <section>
-        <div className="container head">
-          <div className="right object__animate right__animate show">
-            <h1 className="text__principal">
+      <section className="mt-28 mb-52">
+        <div className="mx-16 flex justify-center items-center gap-16 flex-wrap tablet:mx-8 phone:mx-4">
+          <div className="max-w-xl">
+            <h1 className="mb-14 text-[3.125rem] font-extrabold leading-[3.75rem] text-color_primary_2 tablet:text-center phone:text-[2.5rem]">
               Capacitamos personas para que cumplan su sueño emprendedor
             </h1>
-            <p className="p__header">
+            <p className="mb-14 text-[1.125rem] font-semibold leading-7 text-color_primary_2 tablet:text-center">
               Te acompañamos en tu camino con profesionales experimentados y las
               mejores herramientas.
             </p>
-            <a href="/courses" className="button__cta button__desktop">
+            <a
+              href="/courses"
+              className="button-cta tablet:hidden"
+            >
               Conoce nuestros cursos
             </a>
           </div>
 
-          <div className="left object__animate left__animate show">
+          <div className="max-w-lg">
             <img
               src="./src/assets/img/enterprising-couple-in-cafeteria.png"
               alt="enterprising couple in cafeteria"
-              className="img_full"
+              className="w-full"
             />
           </div>
 
-          <div className="button__phone">
-            <a href="/courses" className="button__cta">
+          <div className="hidden tablet:block tablet:mt-5">
+            <a href="/courses" className="button-cta phone:py-5 phone:px-4">
               Conoce nuestros cursos
             </a>
           </div>
@@ -38,11 +40,11 @@ const Home = () => {
         <img
           src="./src/assets/img/curveRU.svg"
           alt="curve right up"
-          className="curves"
+          className="absolute top-1/2 -z-10 tablet:hidden"
         />
       </section>
-      <section>
-        <div className="container">
+      <section className="mt-28 mb-52">
+        <div className="mx-16 grid gap-16 grid-cols-3-auto justify-items-center items-stretch tablet:mx-8 phone:mx-4">
           <CardF
             title="Misión"
             img="./src/assets/img/mission-image.jpg"
@@ -63,54 +65,59 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="section__courses">
-        <div className="container flex__column flex__course-column">
-          <TitleH2 title="Nuestros cursos" />
-          <p className="p__title p__color">
+      <section className="mt-28 mb-52 relative">
+        <div className="mx-16 flex flex-col gap-4 items-start tablet:mx-8 phone:mx-4 phone:items-center">
+          <h2 className="text-color_primary_2 after:bg-color_secondary_2">
+            Nuestros cursos
+          </h2>
+          <p className="text-color_primary_2 font-semibold leading-[45px] text-[1.375rem]">
             Nuestra oferta académica te permitirá desempeñarte en las áreas de:
           </p>
 
-          <div className="grid__courses">
+          <div className="grid grid-cols-4 mt-20 phone:flex phone:flex-col phone:items-center">
             <Course
               title="Administración"
               img="./src/assets/img/management-course.png"
               alt="management course image"
               paragraph="Suma conocimientos de gestión y administración altamente útiles y requeridos en toda empresa."
+              columnPos="col-start-2 col-span-3"
             />
             <Course
               title="Contabilidad"
               img="./src/assets/img/accounting-course.png"
               alt="accounting course image"
               paragraph="Aprende la mejor manera de atender las cuentas de tu negocio o de la empresa que vayas a trabajar."
+              columnPos="col-start-1 col-span-3"
             />
             <Course
               title="Marketing"
               img="./src/assets/img/marketing-course.png"
               alt="marketing course image"
               paragraph="Gestiona, planifica y crea las mejores y mas nuevas estrategias de publicidad y promoción para tu emprendimiento o para clientes."
+              columnPos="col-start-2 col-span-3"
             />
           </div>
         </div>
         <img
           src="./src/assets/img/curveRD.svg"
           alt="curve right down"
-          className="curves"
+          className="absolute top-2/4 -z-10 tablet:hidden"
         />{" "}
       </section>
-      <section>
-        <div className="container">
-          <p className="graduate">
+      <section className="mt-28 mb-52 relative">
+        <div className="mx-16 flex flex-wrap items-center justify-center gap-16 tablet:mx-8 phone:mx-4">
+          <p className="font-gilgory text-2xl	leading-[49px] font-extrabold text-color_primary_2 tablet:text-center">
             De 1,038 egresados de la carrera de Administración, 919 se
             encuentran trabajando.
           </p>
-          <div className="card___grid">
+          <div className="grid gap-16 grid-cols-3-auto justify-items-center items-stretch">
             <div className="card__item">
               <img
                 src="./src/assets/img/student-boy-on-notebook.png"
                 alt="student boy on notebook"
                 className="img_full"
               />
-              <p className="p__graduate p__roboto">
+              <p className="text-lg leading-[34px] font-semibold text-color_primary_2">
                 ¿Sabías que tener conocimientos de Administración te permite
                 contar con herramientas para gestionar de manera eficiente tu
                 negocio?
@@ -131,8 +138,10 @@ const Home = () => {
                 alt="laughing girl"
                 className="img_full"
               />
-              <p className="p__graduate p__roboto">¿Quieres ser Contador/a?</p>
-              <p className="p__graduate p__roboto">
+              <p className="text-lg leading-[34px] font-semibold text-color_primary_2 text-center">
+                ¿Quieres ser Contador/a?
+              </p>
+              <p className="text-lg leading-[34px] font-semibold text-color_primary_2">
                 Contaduría está entre las carreras con menor porcentaje de
                 informalidad y de desempleo en México.
               </p>
@@ -142,53 +151,61 @@ const Home = () => {
         <img
           src="./src/assets/img/curveLU.svg"
           alt="curve left up"
-          className="curves"
+          className="absolute top-1/3 -z-10 tablet:hidden"
         />{" "}
       </section>
-      <section>
-        <div className="container" id="testimonials">
-          <TitleH2 title="Testimonios" />
+      <section className="mt-28 mb-52">
+        <div
+          className="mx-16 flex flex-wrap items-center justify-center gap-4 tablet:mx-8 phone:mx-4"
+          id="testimonials"
+        >
+          <h2 className="text-color_primary_2 after:bg-color_secondary_2 mb-14">
+            Testimonios
+          </h2>
 
-          <div className="card___grid object__animate right__animate show">
+          <div className="grid gap-16 grid-cols-3-auto justify-items-center items-stretch">
             <CardT
               img="./src/assets/img/testimony-1.png"
-              paragraph="'El curso fue muy interesante, muy didáctico en cuanto a la metodología de trabajo y contenidos. (…) todas las dudas fueron perfectamente respondidas. Creo que todo lo aprendido tiene mucho valor para el desempeño de nuestro trabajo profesional cotidiano. Gracias por el compromiso y predisposición del docente para con el curso.'"
+              paragraph="''El curso fue muy interesante, muy didáctico en cuanto a la metodología de trabajo y contenidos. (…) todas las dudas fueron perfectamente respondidas. Creo que todo lo aprendido tiene mucho valor para el desempeño de nuestro trabajo profesional cotidiano. Gracias por el compromiso y predisposición del docente para con el curso.''"
               name="Juliana, 24 años"
+              lineSide={false}
             />
             <CardT
               img="./src/assets/img/testimony-2.png"
               paragraph="'El material entregado en el Curso de Marketing cubrió totalmente la necesidad, y el objetivo superó totalmente con lo propuesto. El curso esta relacionado con lo que realmente pasa en la empresa.'"
               name="Rosa, 37 años"
+              lineSide={true}
             />
             <CardT
               img="./src/assets/img/testimony-3.png"
               paragraph="'Una vez iniciados mis estudios, descubrí el trato personalizado, profesional y la excelente calidad humana de todos sus profesores. Todos de una forma u otra, contribuyeron motivándome, inspirándome y retándome a dar lo mejor de mí.'"
               name="Carlos, 45 años"
+              lineSide={true}
             />
           </div>
         </div>
       </section>
-      <section>
-        <div className="container cta">
-          <h2 className="text__principal right">
+      <section className="mt-28 mb-52 relative">
+        <div className="mx-16 flex flex-wrap items-center justify-between gap-4 tablet:mx-8 tablet:justify-center phone:mx-4">
+          <h2 className="text-[50px] mb-14 text-color_primary_2 max-w-[600px] tablet:text-center phone:text-[2.5rem]">
             Aprende las mejores herramientas para hacer crecer tu negocio.
           </h2>
 
-          <a href="" className="button__cta">
+          <a href="" className="button-cta phone:py-5 phone:px-4">
             Consulta Inscriciones
           </a>
         </div>
         <img
           src="./src/assets/img/curveLD.svg"
           alt="curve left down"
-          className="curves curve__cta"
+          className="absolute -top-[450px] -z-10 tablet:hidden"
         />
       </section>
-      <section>
-        <div className="container flex__start" id="about">
-          <TitleH2 title="Nosotros" />
+      <section className="mt-28 mb-52">
+        <div className="mx-16 flex flex-wrap items-center gap-16 tablet:mx-8 phone:mx-4" id="about">
+          <h2 className="text-color_primary_2 after:bg-color_secondary_2 mb-14">Nosotros</h2>
 
-          <div className="card___grid">
+          <div className="grid gap-16 grid-cols-3-auto justify-items-center items-stretch">
             <div className="card__item object__animate right__animate show">
               <img
                 src="./src/assets/img/about.png"
@@ -198,14 +215,14 @@ const Home = () => {
             </div>
 
             <div className="object__animate right__animate zoomIn">
-              <h3 className="title__course title__capitalize">La escuela</h3>
-              <p className="p__roboto p__color">
+              <h3 className="text-color_primary_2 capitalize">La escuela</h3>
+              <p className="text-color_primary_2 text-lg font-normal leading-[34px]">
                 Somos una escuela de larga trayectoria, ubicada en el centro de
                 la Ciudad de México. Nuestros inicios se remontan al año 2002,
                 estableciendonos como una de las primeras escuelas
                 independientes avocadas a personas emprendedoras.
               </p>
-              <p className="p__roboto p__color">
+              <p className="text-color_primary_2 text-lg font-normal leading-[34px]">
                 Contamos con un establecimiento moderno, en donde se dictan las
                 clases presenciales, y tambien contamos con un campus virtual en
                 donde llevamos a cabo tutoriales y material
@@ -216,11 +233,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="container card___grid">
+      <section className="mt-28 mb-52 relative">
+        <div className="mx-16 grid gap-16 grid-cols-3-auto justify-items-center items-stretch tablet:mx-8 phone:mx-4">
           <div>
             <h3 className="title__course title__capitalize">Staff</h3>
-            <p className="p__color p__roboto">
+            <p className="text-color_primary_2 text-lg font-normal leading-[34px]">
               Contamos con un plantel de profesionales experimentados en las
               áreas dictadas. Cada miembro se desempeña en guiar, brindar los
               conocimiemtos y acompañar a cada estudiante en su proceso de
@@ -228,7 +245,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="card__item flex__row">
+          <div className="flex items-center flex-row ">
             <img
               src="./src/assets/img/staff-member-1.png"
               alt="staff member 1"
@@ -243,38 +260,38 @@ const Home = () => {
             />
           </div>
 
-          <div className="card__item">
+          <div className="flex items-center flex-col">
             <img src="./src/assets/img/ceo-director.png" alt="ceo director" />
-            <p className="p__title">Carlos Carrera</p>
-            <p className="p__color p__roboto">CEO/Director BAX Soluciones</p>
+            <p className="text-color_primary_2 text-[1.375rem] font-semibold leading-[45px]">Carlos Carrera</p>
+            <p className="text-color_primary_2 text-lg font-normal leading-[34px] tablet:text-center">CEO/Director BAX Soluciones</p>
           </div>
         </div>
         <img
           src="./src/assets/img/curveLU.svg"
           alt="curve left up"
-          className="curves curve__staff"
+          className="absolute -top-3/4 -z-10 tablet:hidden"
         />
       </section>
-      <section>
-        <div className="container">
-          <div className="flex__column">
-            <h2 className="text__principal center__text">
+      <section className="mt-28 mb-52">
+        <div className="mx-16 tablet:mx-8 phone:mx-4">
+          <div className="flex flex-col items-center content-center gap-16">
+            <h2 className="text-[50px] text-color_primary_2 text-center phone:text-[2.5rem]">
               Si quieres potenciarte y capacitarte, este es tu lugar.
             </h2>
-            <a href="/contact" className="button__cta">
+            <a href="/contact" className="button-cta phone:py-5 phone:px-4">
               Quiero inscribirme
             </a>
           </div>
         </div>
       </section>
-      <section>
-        <div className="container">
+      <section className="mt-28 mb-52 relative">
+        <div className="mx-16 flex justify-center tablet:mx-8 phone:mr-8">
           <div className="qa__content">
-            <p className="text__principal qa__text">Preguntas frecuentes</p>
+            <p className="text-[22px] text-color_primary_2 mb-14 leading-[60px] font-extrabold">Preguntas frecuentes</p>
 
-            <ol>
-              <div className="flex__horizontal">
-                <li className="p__graduate p__roboto">
+            <ol className="list-decimal">
+              <div className="flex justify-between items-center mt-10 gap-32">
+                <li className="font-roboto text-lg leading-[34px] font-semibold text-color_primary_2">
                   ¿Entregan certificaciones?
                 </li>
                 <img
@@ -283,16 +300,18 @@ const Home = () => {
                   className="arrow__down"
                 />
               </div>
-              <div className="flex__horizontal">
-                <li className="p__graduate p__roboto">¿Como puedo inscribirme?</li>
+              <div className="flex justify-between items-center mt-10 gap-32">
+                <li className="font-roboto text-lg leading-[34px] font-semibold text-color_primary_2">
+                  ¿Como puedo inscribirme?
+                </li>
                 <img
                   src="./src/assets/img/keyboard_arrow_down.svg"
                   alt="arrow down"
                   className="arrow__down"
                 />
               </div>
-              <div className="flex__horizontal">
-                <li className="p__graduate p__roboto">
+              <div className="flex justify-between items-center mt-10 gap-32">
+                <li className="font-roboto text-lg leading-[34px] font-semibold text-color_primary_2">
                   ¿Necesito conocimientos previos para cursar
                 </li>
                 <img
@@ -307,11 +326,11 @@ const Home = () => {
         <img
           src="./src/assets/img/curveRD.svg"
           alt="curve right down"
-          className="curves curve__staff"
+          className="absolute -top-48 -z-10 tablet:hidden"
         />
       </section>
-      <div className="container flex__content__center">
-        <TitleH2 title="Tu futuro es hoy" />
+      <div className="mx-16 flex justify-center">
+        <h2 className="text-color_primary_2 tablet:text-center phone:text-[2.5rem]">Tu futuro es hoy</h2>
       </div>
     </>
   );

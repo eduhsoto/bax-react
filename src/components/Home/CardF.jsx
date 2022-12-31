@@ -1,13 +1,13 @@
 const CardF = ({title, img, alt, paragraph}) => {
   return (
-    <div className="card__item object__animate card__animate zoomIn">
-      <h3 className="title__course">{title}</h3>
+    <div className="flex items-center flex-col">
+      <h3 className="uppercase">{title}</h3>
       <img
         src={img}
         alt={alt}
-        className="philosophy__image"
+        className="rounded-tr-[50px]"
       />
-      <p className="p__philosophy p__roboto">
+      <p className="bg-color_primary_1 rounded-b-[40px] px-8 py-8 h-full text-color_default text-lg leading-[34px] font-normal">
         {paragraph}
       </p>
     </div>

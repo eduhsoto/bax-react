@@ -1,16 +1,16 @@
-const Course = ({title, img, alt, paragraph}) => {
+const Course = ({title, img, alt, paragraph, columnPos}) => {
   return (
-    <div className="item__course course1 object__animate card__animate zoomIn">
-      <div className="description__course">
-        <h3 className="title__course">{title}</h3>
-        <p className="p__roboto p__color">
+    <div className={`flex items-stretch mx-20 my-3 w-[90%] place-items-end ${columnPos} phone:w-full phone:flex-col phone:mx-3 phone:my-3`}>
+      <div className="bg-accent_color rounded-tl-[40px] px-10 py-10 phone:px-8 phone:py-5">
+        <h3 className="uppercase text-color_primary_2">{title}</h3>
+        <p className="text-lg leading-[34px] font-normal">
             {paragraph}
         </p>
       </div>
       <img
         src={img}
         alt={alt}
-        className="img__course"
+        className="w-2/5 phone:w-full"
       />
     </div>
   );

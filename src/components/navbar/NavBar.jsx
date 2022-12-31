@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="sticky top-0 bg-white">
+    <nav className="sticky top-0 bg-white z-10">
       <div className="mx-16 my-2.5 flex justify-between items-center tablet:mx-8 tablet:my-3 phone:mx-4">
         <NavLink to="/">
           <img
