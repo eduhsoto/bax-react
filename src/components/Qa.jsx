@@ -1,7 +1,7 @@
 const Qa = ({ q1, q2, q3 }) => {
   return (
     <div className="qa__content">
-      <p className="text-[22px] text-color_primary_2 mb-14 leading-[60px] font-extrabold">
+      <p className="text-[22px] text-color_primary_2 mb-14 leading-[60px] font-extrabold tablet:text-center">
         Preguntas frecuentes
       </p>
 

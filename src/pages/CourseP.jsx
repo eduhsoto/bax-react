@@ -4,7 +4,7 @@ import Qa from "../components/Qa";
 const CourseP = () => {
   return (
     <>
-      <section className="mt-28 mb-52">
+      <section className="mt-28 mb-52 relative">
         <Course
           img="./src/assets/img/management-course-2.png"
           alt="management course image"
@@ -14,22 +14,27 @@ const CourseP = () => {
           time="Duración del curso: 1 año."
           subjects="Cantidad de materias: 16"
         />
+        <img
+          src="./src/assets/img/curveRU.svg"
+          alt="curve right up"
+          className="absolute top-[45%] -z-10 tablet:hidden"
+        />
       </section>
       <section className="mt-28 mb-52">
         <div className="mx-16 tablet:mx-8 phone:mx-4 flex justify-center items-center flex-wrap gap-16">
-          <div className="left__course flex__column form__contact">
-            <h3 className="title__course margin__bottom-none">Contabilidad</h3>
-            <p className="p__color p__roboto">
+          <div className="flex flex-col items-stretch gap-6 max-w-[480px]">
+            <h3 className="mb-0 uppercase text-color_primary_2">Contabilidad</h3>
+            <p className="text-color_primary_2 text-lg font-normal leading-[34px]">
               Cuando termines de estudiar la carrera de contabilidad, podrás
               desempeñarte en los siguientes puestos de trabajo: Administrativo
               contable, Auditor en estudios contables, Consultor independiente,
               Gerente de finanzas, Perito contable, entre otros.
             </p>
-            <p className="p__color p__roboto">
+            <p className="text-color_primary_2 text-lg font-normal leading-[34px]">
               Duración del curso: 1 año. <br /> Cantidad de materias: 14
             </p>
           </div>
-          <div className="right">
+          <div className="max-w-[600px]">
             <img
               src="./src/assets/img/accounting-course-2.png"
               alt="accounting course image"
@@ -38,7 +43,7 @@ const CourseP = () => {
           </div>
         </div>
       </section>
-      <section className="mt-28 mb-52">
+      <section className="mt-28 mb-52 relative">
         <Course
           img="./src/assets/img/marketing-course-2.png"
           alt="marketing course image"
@@ -47,6 +52,11 @@ const CourseP = () => {
           p2="Esta carrera tiene una gran salida laboral, principalmente en tres áreas: el departamento de marketing de una empresa; una agencia de marketing para otras empresas; ser freelancer."
           time="Duración del curso: 1 año."
           subjects="Cantidad de materias: 16"
+        />
+        <img
+          src="./src/assets/img/curveLD.svg"
+          alt="curve left down"
+          className="absolute -top-1/2 -z-10 tablet:hidden"
         />
       </section>
       <section className="mt-28 mb-52">
