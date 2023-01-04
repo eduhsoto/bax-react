@@ -1,6 +1,7 @@
+import About from "../components/home/About";
 import CardF from "../components/Home/CardF";
-import CardT from "../components/Home/CardT";
 import Course from "../components/Home/Course";
+import Testimonials from "../components/home/Testimonials";
 import Qa from "../components/Qa";
 
 const Home = () => {
@@ -152,7 +153,8 @@ const Home = () => {
           className="absolute top-1/3 -z-10 tablet:hidden"
         />{" "}
       </section>
-      <section className="mt-28 mb-52">
+      <Testimonials />
+      {/* <section className="mt-28 mb-52">
         <div
           className="mx-16 flex flex-wrap items-center justify-center gap-4 tablet:mx-8 phone:mx-4"
           id="testimonials"
@@ -182,7 +184,7 @@ const Home = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="mt-28 mb-52 relative">
         <div className="mx-16 flex flex-wrap items-center justify-between gap-4 tablet:mx-8 tablet:justify-center phone:mx-4">
           <h2 className="text-[50px] mb-14 text-color_primary_2 max-w-[600px] tablet:text-center phone:text-[2.5rem]">
@@ -199,7 +201,8 @@ const Home = () => {
           className="absolute -top-[450px] -z-10 tablet:hidden"
         />
       </section>
-      <section className="mt-28 mb-52">
+      <About />
+      {/* <section className="mt-28 mb-52">
         <div
           className="mx-16 flex flex-wrap items-center gap-16 tablet:mx-8 phone:mx-4"
           id="about"
@@ -235,7 +238,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="mt-28 mb-52 relative">
         <div className="mx-16 grid gap-16 grid-cols-3-auto justify-items-center items-stretch tablet:mx-8 phone:mx-4">
           <div>

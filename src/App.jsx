@@ -4,7 +4,7 @@ import CourseP from "./pages/CourseP";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import { NavbarwithRenderB, FooterwithRenderB } from "./LocationHco";
+import { NavbarwithRenderB, FooterwithRenderB } from "./hco/LocationHco";
 
 function App() {
   return (

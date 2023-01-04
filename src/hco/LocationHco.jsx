@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
-import NavBar from "./components/navbar/NavBar";
-import Footer from "./components/Footer";
+import NavBar from "../components/navbar/NavBar";
+import Footer from "../components/footer/Footer";
+
 
 const withRenderBoolean = (Component) => {
   const WrappedComponent = () => {

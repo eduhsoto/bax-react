@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import NavHash from "./navbar/NavHash";
+import NavHFooter from "./NavHFooter";
 
 const Footer = () => {
   return (
@@ -12,12 +12,8 @@ const Footer = () => {
           >
             Cursos
           </NavLink>
-          <NavHash
-            hashNav="#testimonials"
-            hashName="Testimonios"
-            classHash={false}
-          />
-          <NavHash hashNav="#about" hashName="Nosotros" classHash={false} />
+          <NavHFooter hashNav="#testimonials" hashName="Testimonios"/>
+          <NavHFooter hashNav="#about" hashName="Nosotros"/>
           <NavLink
             to="/contact"
             className="font-roboto text-base leading-[19px] font-normal text-color_default"
