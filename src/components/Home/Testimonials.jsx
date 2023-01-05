@@ -1,17 +1,11 @@
-import useObserver from "../../hooks/UseObserver";
 import CardT from "../home/CardT";
 
 const Testimonials = () => {
-  const [refC, isVisible] = useObserver();
-  if (refC.current !== null) {
-    console.log(refC);
-  }
   return (
     <section className="mt-28 mb-52">
       <div
         className="mx-16 flex flex-wrap items-center justify-center gap-4 tablet:mx-8 phone:mx-4"
         id="testimonials"
-        ref={refC}
       >
         <h2 className="text-color_primary_2 after:bg-color_secondary_2 mb-14">
           Testimonios

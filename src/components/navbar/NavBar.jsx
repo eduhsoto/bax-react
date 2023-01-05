@@ -34,12 +34,8 @@ const NavBar = () => {
           <div className="tablet:flex tablet:flex-col tablet:justify-between tablet:items-center tablet:gap-8">
             <NavLi itemNav="Inicio" linkTo="/" />
             <NavLi itemNav="Cursos" linkTo="/courses" />
-            <NavHash
-              hashNav="#testimonials"
-              hashName="Testimonios"
-              classHash={true}
-            />
-            <NavHash hashNav="#about" hashName="Nosotros" classHash={true} />
+            <NavHash hashNav="#testimonials" hashName="Testimonios" />
+            <NavHash hashNav="#about" hashName="Nosotros" />
             <NavLi itemNav="Contacto" linkTo="/contact" />
           </div>
         </div>

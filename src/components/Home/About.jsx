@@ -1,16 +1,9 @@
-import useObserver from "../../hooks/UseObserver";
-
 const About = () => {
-  const [refC, isVisible] = useObserver();
-  if (refC.current !== null) {
-    console.log(refC);
-  }
   return (
     <section className="mt-28 mb-52">
       <div
         className="mx-16 flex flex-wrap items-center gap-16 tablet:mx-8 phone:mx-4"
         id="about"
-        ref={refC}
       >
         <h2 className="text-color_primary_2 after:bg-color_secondary_2 mb-14">
           Nosotros
