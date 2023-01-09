@@ -1,9 +1,15 @@
 import Course from "../components/course/Course";
 import Qa from "../components/Qa";
+import Seo from "../seo/Seo";
 
 const CourseP = () => {
   return (
     <>
+     <Seo
+        title="Conoce nuestros cursos"
+        description="Conoce nuestros cursos para emprendedores"
+        keywords="Bax, Bax soluciones, cursos, cursos para emprendedores"
+      />
       <section className="mt-28 mb-52 relative">
         <Course
           img="./src/assets/img/management-course-2.png"
@@ -23,7 +29,9 @@ const CourseP = () => {
       <section className="mt-28 mb-52">
         <div className="mx-16 tablet:mx-8 phone:mx-4 flex justify-center items-center flex-wrap gap-16">
           <div className="flex flex-col items-stretch gap-6 max-w-[480px]">
-            <h3 className="mb-0 uppercase text-color_primary_2">Contabilidad</h3>
+            <h3 className="mb-0 uppercase text-color_primary_2">
+              Contabilidad
+            </h3>
             <p className="text-color_primary_2 text-lg font-normal leading-[34px]">
               Cuando termines de estudiar la carrera de contabilidad, podrás
               desempeñarte en los siguientes puestos de trabajo: Administrativo

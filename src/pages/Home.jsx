@@ -3,10 +3,16 @@ import CardF from "../components/Home/CardF";
 import Course from "../components/Home/Course";
 import Testimonials from "../components/home/Testimonials";
 import Qa from "../components/Qa";
+import Seo from "../seo/Seo";
 
 const Home = () => {
   return (
     <>
+      <Seo
+        title="Bax - Capacitamos personas para que cumplan su sueño emprendedor"
+        description="Te acompañamos en tu camino con profesionales experimentados y las mejores herramientas."
+        keywords="Bax, Bax soluciones, Capacitamos emprendedores, emprendedores"
+      />
       <section className="mt-28 mb-52">
         <div className="mx-16 flex justify-center items-center gap-16 flex-wrap tablet:mx-8 phone:mx-4">
           <div className="max-w-xl">
@@ -154,37 +160,6 @@ const Home = () => {
         />{" "}
       </section>
       <Testimonials />
-      {/* <section className="mt-28 mb-52">
-        <div
-          className="mx-16 flex flex-wrap items-center justify-center gap-4 tablet:mx-8 phone:mx-4"
-          id="testimonials"
-        >
-          <h2 className="text-color_primary_2 after:bg-color_secondary_2 mb-14">
-            Testimonios
-          </h2>
-
-          <div className="grid gap-16 grid-cols-3-auto justify-items-center items-stretch">
-            <CardT
-              img="./src/assets/img/testimony-1.png"
-              paragraph="''El curso fue muy interesante, muy didáctico en cuanto a la metodología de trabajo y contenidos. (…) todas las dudas fueron perfectamente respondidas. Creo que todo lo aprendido tiene mucho valor para el desempeño de nuestro trabajo profesional cotidiano. Gracias por el compromiso y predisposición del docente para con el curso.''"
-              name="Juliana, 24 años"
-              lineSide={false}
-            />
-            <CardT
-              img="./src/assets/img/testimony-2.png"
-              paragraph="'El material entregado en el Curso de Marketing cubrió totalmente la necesidad, y el objetivo superó totalmente con lo propuesto. El curso esta relacionado con lo que realmente pasa en la empresa.'"
-              name="Rosa, 37 años"
-              lineSide={true}
-            />
-            <CardT
-              img="./src/assets/img/testimony-3.png"
-              paragraph="'Una vez iniciados mis estudios, descubrí el trato personalizado, profesional y la excelente calidad humana de todos sus profesores. Todos de una forma u otra, contribuyeron motivándome, inspirándome y retándome a dar lo mejor de mí.'"
-              name="Carlos, 45 años"
-              lineSide={true}
-            />
-          </div>
-        </div>
-      </section> */}
       <section className="mt-28 mb-52 relative">
         <div className="mx-16 flex flex-wrap items-center justify-between gap-4 tablet:mx-8 tablet:justify-center phone:mx-4">
           <h2 className="text-[50px] mb-14 text-color_primary_2 max-w-[600px] tablet:text-center phone:text-[2.5rem]">
@@ -202,43 +177,6 @@ const Home = () => {
         />
       </section>
       <About />
-      {/* <section className="mt-28 mb-52">
-        <div
-          className="mx-16 flex flex-wrap items-center gap-16 tablet:mx-8 phone:mx-4"
-          id="about"
-        >
-          <h2 className="text-color_primary_2 after:bg-color_secondary_2 mb-14">
-            Nosotros
-          </h2>
-
-          <div className="grid gap-16 grid-cols-3-auto justify-items-center items-stretch">
-            <div className="card__item object__animate right__animate show">
-              <img
-                src="./src/assets/img/about.png"
-                alt="about"
-                className="img_full"
-              />
-            </div>
-
-            <div className="object__animate right__animate zoomIn">
-              <h3 className="text-color_primary_2 capitalize">La escuela</h3>
-              <p className="text-color_primary_2 text-lg font-normal leading-[34px]">
-                Somos una escuela de larga trayectoria, ubicada en el centro de
-                la Ciudad de México. Nuestros inicios se remontan al año 2002,
-                estableciendonos como una de las primeras escuelas
-                independientes avocadas a personas emprendedoras.
-              </p>
-              <p className="text-color_primary_2 text-lg font-normal leading-[34px]">
-                Contamos con un establecimiento moderno, en donde se dictan las
-                clases presenciales, y tambien contamos con un campus virtual en
-                donde llevamos a cabo tutoriales y material
-                complementario.Creamos un ambiente seguro y confiable para que
-                todos los estudiantes se sientan cómodos y conectados.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="mt-28 mb-52 relative">
         <div className="mx-16 grid gap-16 grid-cols-3-auto justify-items-center items-stretch tablet:mx-8 phone:mx-4">
           <div>
