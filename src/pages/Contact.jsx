@@ -1,5 +1,6 @@
 import SendMail from "../components/contact/SendMail";
 import Seo from "../seo/Seo";
+import { lazy, Suspense } from "react";
 
 const Contact = () => {
   return (
@@ -20,7 +21,9 @@ const Contact = () => {
           </div>
 
           <div className="w-[450px]">
-            <SendMail />
+            <Suspense fallback={<h3>loading</h3>}>
+              <SendMail />
+            </Suspense>
           </div>
         </div>
         <img

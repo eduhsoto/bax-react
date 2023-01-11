@@ -30,7 +30,7 @@ const Home = () => {
 
           <div className="max-w-lg">
             <img
-              src="./src/assets/img/enterprising-couple-in-cafeteria.png"
+              src="/enterprising-couple-in-cafeteria.png"
               alt="enterprising couple in cafeteria"
               className="w-full"
             />
