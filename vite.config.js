@@ -1,5 +1,6 @@
 import { build, defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { ssr } from 'vite-plugin-ssr/plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         entryFileNames: "[name].js",
-        chunkFileNames: "lazy/[name].js",
+        chunkFileNames: "chunk/[name].js",
         assetFileNames: "assets/[name].[ext]",
       },
     },
