@@ -1,4 +1,4 @@
-import MsgForm from "./msgForm";
+import MsgForm from "./MsgForm";
 
 const ErrorF = () => {
   return (
