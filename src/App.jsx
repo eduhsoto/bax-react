@@ -2,11 +2,15 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import "./assets/index.css";
 import { NavbarwithRenderB, FooterwithRenderB } from "./hco/LocationHco";
 import { lazy, Suspense } from "react";
+import CourseP from "./pages/CourseP";
+import Contact from "./pages/Contact"
+import Home from "./pages/Home"
+import NotFound from "./pages/NotFound"
 
-const CourseP = lazy(() => import("./pages/CourseP"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Home = lazy(() => import("./pages/Home"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+// const CourseP = lazy(() => import("./pages/CourseP"));
+// const Contact = lazy(() => import("./pages/Contact"));
+// const Home = lazy(() => import("./pages/Home"));
+// const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
