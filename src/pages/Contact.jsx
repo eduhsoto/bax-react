@@ -21,9 +21,9 @@ const Contact = () => {
           </div>
 
           <div className="w-[450px]">
-            <Suspense fallback={<h3>loading</h3>}>
+            {/* <Suspense fallback={<h3>loading</h3>}> */}
               <SendMail />
-            </Suspense>
+            {/* </Suspense> */}
           </div>
         </div>
         <img
