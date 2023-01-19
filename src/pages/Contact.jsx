@@ -1,6 +1,8 @@
-import SendMail from "../components/contact/SendMail";
+// import SendMail from "../components/contact/SendMail";
 import Seo from "../seo/Seo";
 import { lazy, Suspense } from "react";
+
+const SendMail = lazy(() => import("../components/contact/SendMail"))
 
 const Contact = () => {
   return (
@@ -21,9 +23,9 @@ const Contact = () => {
           </div>
 
           <div className="w-[450px]">
-            {/* <Suspense fallback={<h3>loading</h3>}> */}
+            <Suspense fallback={<h3>loading</h3>}>
               <SendMail />
-            {/* </Suspense> */}
+            </Suspense>
           </div>
         </div>
         <img
