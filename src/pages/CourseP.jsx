@@ -12,7 +12,7 @@ const CourseP = () => {
       />
       <section className="mt-28 mb-52 relative">
         <Course
-          img="./src/assets/img/management-course-2.png"
+          img="assets/img/management-course-2.png"
           alt="management course image"
           title="Administración"
           p1="Estos profesionales pueden encargarse de temas tan diversos como las finanzas, la tesorería y la contabilidad. Además, pueden controlar funciones de RRHH y marketing."
@@ -21,7 +21,7 @@ const CourseP = () => {
           subjects="Cantidad de materias: 16"
         />
         <img
-          src="./src/assets/img/curveRU.svg"
+          src="assets/img/curveRU.svg"
           alt="curve right up"
           className="absolute top-[45%] -z-10 tablet:hidden"
         />
@@ -44,7 +44,7 @@ const CourseP = () => {
           </div>
           <div className="max-w-[600px]">
             <img
-              src="./src/assets/img/accounting-course-2.png"
+              src="assets/img/accounting-course-2.png"
               alt="accounting course image"
               className="img_full"
             />
@@ -53,7 +53,7 @@ const CourseP = () => {
       </section>
       <section className="mt-28 mb-52 relative">
         <Course
-          img="./src/assets/img/marketing-course-2.png"
+          img="assets/img/marketing-course-2.png"
           alt="marketing course image"
           title="Marketing"
           p1="En esta área se encargan de la propuesta de estrategia de publicidad, aplicada en función a las características de la empresa."
@@ -62,7 +62,7 @@ const CourseP = () => {
           subjects="Cantidad de materias: 16"
         />
         <img
-          src="./src/assets/img/curveLD.svg"
+          src="assets/img/curveLD.svg"
           alt="curve left down"
           className="absolute -top-1/2 -z-10 tablet:hidden"
         />
