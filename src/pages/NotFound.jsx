@@ -14,7 +14,7 @@ export const NotFound = () => {
             Disculpa no encontramos la página
           </h1>
           <img
-            src="./src/assets/img/no-found.png"
+            src="assets/img/no-found.png"
             alt="enterprising couple in cafeteria"
           />
           <div className="flex flex-col items-center gap-3">

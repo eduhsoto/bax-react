@@ -16,7 +16,7 @@ const NavBar = () => {
       <div className="mx-16 my-2.5 flex justify-between items-center tablet:mx-8 tablet:my-3 phone:mx-4">
         <NavLink to="/">
           <img
-            src="./src/assets/img/brand-logo.jpg"
+            src="assets/img/brand-logo.jpg"
             alt="Bax logo"
             className="w-3/4 my-3"
           />

@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="mx-16 tablet:mx-8 phone:mx-4 flex justify-center items-center flex-wrap gap-16">
           <div className="max-w-[550px]">
             <img
-              src="./src/assets/img/couple-entrepreneurs.png"
+              src="assets/img/couple-entrepreneurs.png"
               alt="couple entrepreneurs"
               className="img_full"
             />
@@ -29,7 +29,7 @@ const Contact = () => {
           </div>
         </div>
         <img
-          src="./src/assets/img/curveLU.svg"
+          src="assets/img/curveLU.svg"
           alt="curve left up"
           className="absolute top-2/4 -z-10 tablet:hidden"
         />
@@ -42,7 +42,7 @@ const Contact = () => {
           <div className="w-full grid gap-16 grid-cols-3-auto justify-items-center items-stretch">
             <div className="flex items-center flex-col">
               <img
-                src="./src/assets/img/channel-phone.png"
+                src="assets/img/channel-phone.png"
                 alt="channel phone"
               />
               <p className="text-color_primary_2 text-lg leading-[34px] tablet:text-center tablet:break-all">
@@ -51,7 +51,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center flex-col">
               <img
-                src="./src/assets/img/channel-email.png"
+                src="assets/img/channel-email.png"
                 alt="channel email"
               />
               <p className="text-color_primary_2 text-lg leading-[34px]">
@@ -63,7 +63,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center flex-col">
               <img
-                src="./src/assets/img/channel-place.png"
+                src="assets/img/channel-place.png"
                 alt="channel place"
               />
               <p className="text-color_primary_2 text-lg leading-[34px] tablet:text-center tablet:break-all">

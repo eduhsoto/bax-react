@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
 
         <img
-          src="./src/assets/img/brand-logo-footer.png"
+          src="assets/img/brand-logo-footer.png"
           alt="brand logo footer"
           className="w-[40%]"
         />
@@ -31,35 +31,35 @@ const Footer = () => {
         <div className="flex gap-4">
           <a href="">
             <img
-              src="./src/assets/img/facebook-icon.png"
+              src="assets/img/facebook-icon.png"
               alt="facebook icon"
               className="w-10"
             />
           </a>
           <a href="">
             <img
-              src="./src/assets/img/instagram-icon.png"
+              src="assets/img/instagram-icon.png"
               alt="instagram icon"
               className="w-10"
             />
           </a>
           <a href="">
             <img
-              src="../src/assets/img/linkedin-icon.png"
+              src="assets/img/linkedin-icon.png"
               alt="linkedin icon"
               className="w-10"
             />
           </a>
           <a href="">
             <img
-              src="./src/assets/img/email-icon.png"
+              src="assets/img/email-icon.png"
               alt="email icon"
               className="w-10"
             />
           </a>
           <a href="">
             <img
-              src="./src/assets/img/twitter-icon.png"
+              src="assets/img/twitter-icon.png"
               alt="twitter icon"
               className="w-10"
             />

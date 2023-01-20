@@ -43,7 +43,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          src="./src/assets/img/curveRU.svg"
+          src="assets/img/curveRU.svg"
           alt="curve right up"
           className="absolute top-1/2 -z-10 tablet:hidden"
         />
@@ -52,19 +52,19 @@ const Home = () => {
         <div className="mx-16 grid gap-16 grid-cols-3-auto justify-items-center items-stretch tablet:mx-8 phone:mx-4">
           <CardF
             title="Misión"
-            img="./src/assets/img/mission-image.jpg"
+            img="assets/img/mission-image.jpg"
             alt="mision woman on computer"
             paragraph="Nos enfocadamos en la educación de alto nivel para los pequeños y medianos emprendedores en México."
           />
           <CardF
             title="Visión"
-            img="./src/assets/img/vision-image.jpg"
+            img="assets/img/vision-image.jpg"
             alt="owner local clothing"
             paragraph="Aportar valor a la mayor cantidad posible de pequeños emprendedores."
           />
           <CardF
             title="Valores"
-            img="./src/assets/img/values-image.jpg"
+            img="assets/img/values-image.jpg"
             alt="team meeting"
             paragraph="Creemos en el potencial de cada persona, en la superación personal y la determinación."
           />
@@ -82,21 +82,21 @@ const Home = () => {
           <div className="grid grid-cols-4 mt-20 phone:flex phone:flex-col phone:items-center">
             <Course
               title="Administración"
-              img="./src/assets/img/management-course.png"
+              img="assets/img/management-course.png"
               alt="management course image"
               paragraph="Suma conocimientos de gestión y administración altamente útiles y requeridos en toda empresa."
               columnPos="col-start-2 col-span-3"
             />
             <Course
               title="Contabilidad"
-              img="./src/assets/img/accounting-course.png"
+              img="assets/img/accounting-course.png"
               alt="accounting course image"
               paragraph="Aprende la mejor manera de atender las cuentas de tu negocio o de la empresa que vayas a trabajar."
               columnPos="col-start-1 col-span-3"
             />
             <Course
               title="Marketing"
-              img="./src/assets/img/marketing-course.png"
+              img="assets/img/marketing-course.png"
               alt="marketing course image"
               paragraph="Gestiona, planifica y crea las mejores y mas nuevas estrategias de publicidad y promoción para tu emprendimiento o para clientes."
               columnPos="col-start-2 col-span-3"
@@ -104,7 +104,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          src="./src/assets/img/curveRD.svg"
+          src="assets/img/curveRD.svg"
           alt="curve right down"
           className="absolute top-2/4 -z-10 tablet:hidden"
         />{" "}
@@ -118,7 +118,7 @@ const Home = () => {
           <div className="grid gap-16 grid-cols-3-auto justify-items-center items-stretch">
             <div className="card__item">
               <img
-                src="./src/assets/img/student-boy-on-notebook.png"
+                src="assets/img/student-boy-on-notebook.png"
                 alt="student boy on notebook"
                 className="img_full"
               />
@@ -131,7 +131,7 @@ const Home = () => {
 
             <div className="card__item">
               <img
-                src="./src/assets/img/img-porcentage.png"
+                src="assets/img/img-porcentage.png"
                 alt="porcentage imgage"
                 className="img_full"
               />
@@ -139,7 +139,7 @@ const Home = () => {
 
             <div className="card__item">
               <img
-                src="./src/assets/img/laughing-girl.png"
+                src="assets/img/laughing-girl.png"
                 alt="laughing girl"
                 className="img_full"
               />
@@ -154,7 +154,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          src="./src/assets/img/curveLU.svg"
+          src="assets/img/curveLU.svg"
           alt="curve left up"
           className="absolute top-1/3 -z-10 tablet:hidden"
         />{" "}
@@ -171,7 +171,7 @@ const Home = () => {
           </a>
         </div>
         <img
-          src="./src/assets/img/curveLD.svg"
+          src="assets/img/curveLD.svg"
           alt="curve left down"
           className="absolute -top-[450px] -z-10 tablet:hidden"
         />
@@ -191,21 +191,21 @@ const Home = () => {
 
           <div className="flex items-center flex-row ">
             <img
-              src="./src/assets/img/staff-member-1.png"
+              src="assets/img/staff-member-1.png"
               alt="staff member 1"
             />
             <img
-              src="./src/assets/img/staff-member-2.png"
+              src="assets/img/staff-member-2.png"
               alt="staff member 2"
             />
             <img
-              src="./src/assets/img/staff-member-3.png"
+              src="assets/img/staff-member-3.png"
               alt="staff member 3"
             />
           </div>
 
           <div className="flex items-center flex-col">
-            <img src="./src/assets/img/ceo-director.png" alt="ceo director" />
+            <img src="assets/img/ceo-director.png" alt="ceo director" />
             <p className="text-color_primary_2 text-[1.375rem] font-semibold leading-[45px]">
               Carlos Carrera
             </p>
@@ -215,7 +215,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          src="./src/assets/img/curveLU.svg"
+          src="assets/img/curveLU.svg"
           alt="curve left up"
           className="absolute -top-3/4 -z-10 tablet:hidden"
         />
@@ -241,7 +241,7 @@ const Home = () => {
           />
         </div>
         <img
-          src="./src/assets/img/curveRD.svg"
+          src="assets/img/curveRD.svg"
           alt="curve right down"
           className="absolute -top-48 -z-10 tablet:hidden"
         />

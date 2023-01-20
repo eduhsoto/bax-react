@@ -12,7 +12,7 @@ const About = () => {
         <div className="grid gap-16 grid-cols-3-auto justify-items-center items-stretch">
           <div className="card__item object__animate right__animate show">
             <img
-              src="./src/assets/img/about.png"
+              src="assets/img/about.png"
               alt="about"
               className="img_full"
             />
