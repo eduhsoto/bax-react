@@ -11,7 +11,7 @@ const Qa = ({ q1, q2, q3 }) => {
             {q1}
           </li>
           <img
-            src="./src/assets/img/keyboard_arrow_down.svg"
+            src="assets/img/keyboard_arrow_down.svg"
             alt="arrow down"
             className="arrow__down"
           />
@@ -21,7 +21,7 @@ const Qa = ({ q1, q2, q3 }) => {
             {q2}
           </li>
           <img
-            src="./src/assets/img/keyboard_arrow_down.svg"
+            src="assets/img/keyboard_arrow_down.svg"
             alt="arrow down"
             className="arrow__down"
           />
@@ -31,7 +31,7 @@ const Qa = ({ q1, q2, q3 }) => {
             {q3}
           </li>
           <img
-            src="./src/assets/img/keyboard_arrow_down.svg"
+            src="assets/img/keyboard_arrow_down.svg"
             alt="arrow down"
             className="arrow__down"
           />
