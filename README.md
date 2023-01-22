@@ -8,3 +8,6 @@ https://github.com/eduhsoto/HTML-CSS
 
 # stage 2
 https://github.com/eduhsoto/HTML-CSS-JavaScript
+
+My description on linkedin 
+https://www.linkedin.com/posts/eduhsoto_html-php-frontend-activity-6997341844195995649-RVje/?utm_source=share&utm_medium=member_android
