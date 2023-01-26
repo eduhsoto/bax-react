@@ -1,5 +1,5 @@
-@import url("https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css");
-@import url("https://use.typekit.net/ixa2dyx.css");
+@import url('https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css');
+@import url('https://use.typekit.net/ixa2dyx.css');
 
 @tailwind base;
 @tailwind components;
@@ -10,11 +10,11 @@
   h2,
   h3,
   a {
-    font-family: "Gilroy";
+    font-family: 'Gilroy';
   }
 
   p {
-    font-family: "roboto";
+    font-family: 'roboto';
   }
 
   h2 {
