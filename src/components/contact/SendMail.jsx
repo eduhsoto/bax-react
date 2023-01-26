@@ -1,8 +1,8 @@
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import ErrorF from "./ErrorF";
-import SucessF from "./SucessF";
-import FormC from "./FormC";
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import ErrorF from './ErrorF';
+import SucessF from './SucessF';
+import FormC from './FormC';
 
 const SendMail = () => {
   const form = useRef();

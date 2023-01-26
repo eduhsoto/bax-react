@@ -1,39 +1,42 @@
-const Qa = ({ q1, q2, q3 }) => {
+import PropTypes from 'prop-types';
+
+const Qa = (props) => {
+  const { q1, q2, q3 } = props;
   return (
-    <div className="qa__content">
-      <p className="text-[22px] text-color_primary_2 mb-14 leading-[60px] font-extrabold tablet:text-center">
+    <div className='qa__content'>
+      <p className='text-[22px] text-color_primary_2 mb-14 leading-[60px] font-extrabold tablet:text-center'>
         Preguntas frecuentes
       </p>
 
-      <ol className="list-decimal">
-        <div className="flex justify-between items-center mt-10 gap-32">
-          <li className="font-roboto text-lg leading-[34px] font-semibold text-color_primary_2">
+      <ol className='list-decimal'>
+        <div className='flex justify-between items-center mt-10 gap-32'>
+          <li className='font-roboto text-lg leading-[34px] font-semibold text-color_primary_2'>
             {q1}
           </li>
           <img
-            src="assets/img/keyboard_arrow_down.svg"
-            alt="arrow down"
-            className="arrow__down"
+            src='assets/img/keyboard_arrow_down.svg'
+            alt='arrow down'
+            className='arrow__down'
           />
         </div>
-        <div className="flex justify-between items-center mt-10 gap-32">
-          <li className="font-roboto text-lg leading-[34px] font-semibold text-color_primary_2">
+        <div className='flex justify-between items-center mt-10 gap-32'>
+          <li className='font-roboto text-lg leading-[34px] font-semibold text-color_primary_2'>
             {q2}
           </li>
           <img
-            src="assets/img/keyboard_arrow_down.svg"
-            alt="arrow down"
-            className="arrow__down"
+            src='assets/img/keyboard_arrow_down.svg'
+            alt='arrow down'
+            className='arrow__down'
           />
         </div>
-        <div className="flex justify-between items-center mt-10 gap-32">
-          <li className="font-roboto text-lg leading-[34px] font-semibold text-color_primary_2">
+        <div className='flex justify-between items-center mt-10 gap-32'>
+          <li className='font-roboto text-lg leading-[34px] font-semibold text-color_primary_2'>
             {q3}
           </li>
           <img
-            src="assets/img/keyboard_arrow_down.svg"
-            alt="arrow down"
-            className="arrow__down"
+            src='assets/img/keyboard_arrow_down.svg'
+            alt='arrow down'
+            className='arrow__down'
           />
         </div>
       </ol>
@@ -42,3 +45,9 @@ const Qa = ({ q1, q2, q3 }) => {
 };
 
 export default Qa;
+
+Qa.propTypes = {
+  q1: PropTypes.string.isRequired,
+  q2: PropTypes.string.isRequired,
+  q3: PropTypes.string.isRequired,
+};
