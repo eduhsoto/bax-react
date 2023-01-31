@@ -14,7 +14,8 @@ const NavBar = () => {
   const handleClick = () => {
     setClicked(!clicked);
   };
-  dispatch(setNewMenu(location.pathname))
+  console.log(location);
+  dispatch(setNewMenu(location.state));
   return (
     <nav className='sticky top-0 bg-white z-10'>
       <div className='mx-16 my-2.5 flex justify-between items-center tablet:mx-8 tablet:my-3 phone:mx-4'>
@@ -36,11 +37,15 @@ const NavBar = () => {
           }`}
         >
           <div className='tablet:flex tablet:flex-col tablet:justify-between tablet:items-center tablet:gap-8'>
-            <NavLi itemNav='Inicio' linkTo='/'/>
-            <NavLi itemNav='Cursos' linkTo='/courses' />
-            <NavHash hashNav='#testimonials' hashName='Testimonios' />
-            <NavHash hashNav='#about' hashName='Nosotros' />
-            <NavLi itemNav='Contacto' linkTo='/contact' />
+            <NavLi itemNav='Inicio' linkTo='/' number={1} />
+            <NavLi itemNav='Cursos' linkTo='/courses' number={2} />
+            <NavHash
+              hashNav='#testimonials'
+              hashName='Testimonios'
+              number={1}
+            />
+            <NavHash hashNav='#about' hashName='Nosotros' number={1} />
+            <NavLi itemNav='Contacto' linkTo='/contact' number={3} />
           </div>
         </div>
       </div>
