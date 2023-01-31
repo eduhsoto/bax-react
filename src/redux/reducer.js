@@ -1,7 +1,7 @@
 import { MENU_SELECTED } from './actions';
 
 const initialState = {
-  menu: '/',
+  menu: 1,
 };
 
 export default function useReduc(state = initialState, action) {
