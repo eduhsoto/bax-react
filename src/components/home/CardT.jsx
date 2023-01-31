@@ -19,5 +19,5 @@ CardT.propTypes = {
   img: PropTypes.string,
   paragraph: PropTypes.string,
   name: PropTypes.string,
-  lineSide: PropTypes.string,
+  lineSide: PropTypes.bool,
 };

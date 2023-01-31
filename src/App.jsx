@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import './assets/index.css';
 import { NavbarwithRenderB, FooterwithRenderB } from './hco/LocationHco';
 import CourseP from './pages/CourseP';
@@ -8,7 +8,7 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <NavbarwithRenderB />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path='/*' element={<Navigate to='/page-not-found' />} />
       </Routes>
       <FooterwithRenderB />
-    </BrowserRouter>
+    </>
   );
 }
 
