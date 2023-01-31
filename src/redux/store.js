@@ -8,6 +8,7 @@ import useReduc from './reducer';
 const persistConfig = {
   key: 'root',
   storage,
+  stateReconciler: autoMergeLevel2,
 };
 
 const pReducer = persistReducer(persistConfig, useReduc);
