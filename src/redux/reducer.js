@@ -1,15 +1,27 @@
-import { MENU_SELECTED } from "./actions";
+import {
+    MENU_SELECTED,
+    SET_SCROLL
+} from "./actions";
+
 
 const initialState = {
-    menu: 0
+    menu: 0,
+    scroll: true,
 }
 
-export default function useReduc(state = initialState, action){
-    if(action.type === MENU_SELECTED){
-        return {
-            ...state,
-            menu: action.payload
-        }
+export default function rootReducer(state = initialState, payload) {
+    switch (payload.type) {
+        case MENU_SELECTED:
+            return {
+                ...state,
+                menu: payload.payload
+            }
+        case SET_SCROLL:
+            return {
+                ...state,
+                scroll: payload.payload
+            }    
+        default:
+            return { ...state };
     }
-    return state;
 }
