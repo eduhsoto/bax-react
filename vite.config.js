@@ -7,14 +7,4 @@ export default defineConfig({
   test:{
     environment: "jsdom"
   },
-  build: {
-    minify: false,
-    rollupOptions: {
-      output: {
-        entryFileNames: '[name].js',
-        chunkFileNames: '[name].js',
-        assetFileNames: '[name].[ext]',
-      },
-    },
-  },
 });
