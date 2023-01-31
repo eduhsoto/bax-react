@@ -120,5 +120,5 @@ export default FormC;
 
 FormC.propTypes = {
   onSubmit: PropTypes.func,
-  form: PropTypes.element,
+  form: PropTypes.object,
 };

@@ -1,16 +1,20 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { NavLink, useLocation } from 'react-router-dom';
+import { setNewMenu } from '../../redux/actions';
 import NavHambur from './NavHambur';
 import NavHash from './NavHash';
 import NavLi from './NavLi';
 
 const NavBar = () => {
   const [clicked, setClicked] = useState(false);
+  const location = useLocation();
+  const dispatch = useDispatch();
 
   const handleClick = () => {
     setClicked(!clicked);
   };
-
+  dispatch(setNewMenu(location.pathname))
   return (
     <nav className='sticky top-0 bg-white z-10'>
       <div className='mx-16 my-2.5 flex justify-between items-center tablet:mx-8 tablet:my-3 phone:mx-4'>
@@ -32,7 +36,7 @@ const NavBar = () => {
           }`}
         >
           <div className='tablet:flex tablet:flex-col tablet:justify-between tablet:items-center tablet:gap-8'>
-            <NavLi itemNav='Inicio' linkTo='/' />
+            <NavLi itemNav='Inicio' linkTo='/'/>
             <NavLi itemNav='Cursos' linkTo='/courses' />
             <NavHash hashNav='#testimonials' hashName='Testimonios' />
             <NavHash hashNav='#about' hashName='Nosotros' />
