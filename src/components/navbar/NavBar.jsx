@@ -15,7 +15,7 @@ const NavBar = () => {
     setClicked(!clicked);
   };
   console.log(location);
-  dispatch(setNewMenu(location.state));
+  dispatch(setNewMenu(location));
   return (
     <nav className='sticky top-0 bg-white z-10'>
       <div className='mx-16 my-2.5 flex justify-between items-center tablet:mx-8 tablet:my-3 phone:mx-4'>
